@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Roboto+Condensed:wght@300&family=Rubik+Mono+One&display=swap");
+
+:root {
+  --tamG: 3.4rem;
+  --tamM: 1.5rem;
+  --tamP: 0.9rem;
+  --bgColor: #eeeeee;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  background-color: var(--bgColor);
+  width: 100%;
+  margin: 2% auto 2% auto;
+  font-family: "open sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+header {
+  display: flex;
+  font-size: var(--tamM);
+  font-weight: 700;
+  align-items: center;
+  width: 95%;
+  justify-content: space-between;
+}
+
+header div {
+  display: flex;
+  align-items: center;
+}
+
+header div ul {
+  display: flex;
+  gap: 12rem;
+  margin-right: 4rem;
+}
+
+.nav-icon {
+  width: 4.5rem;
+  margin: 0 2rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.name h1 {
+  font-size: var(--tamG);
+  font-weight: 100;
+  font-family: "rubik mono one";
+}
+
+.name span {
+  font-size: var(--tamP);
+  font-weight: 100;
+}
+
+.page-1 {
+  display: flex;
+}
+
+.left-1 {
+  width: 35%;
+  margin: 6% 0 0 8%;
+  display: flex;
+  flex-direction: column;
+  gap: 200px;
+}
+
+.right-1 {
+  width: 65%;
+  display: flex;
+  justify-content: center;
+}
+
+.right-1 img {
+  width: 55%;
+  margin: 5rem 0 0 10rem;
+  z-index: -10;
+}
+
+.carrossel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
