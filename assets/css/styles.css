@@ -53,11 +53,18 @@ header div ul {
 
 ul {
   list-style: none;
+  
 }
 
 a {
   text-decoration: none;
   color: inherit;
+  padding: 2px 18px;
+  
+}
+
+a:hover {
+  transition: all 0.5s;
 }
 
 .name {
@@ -75,10 +82,13 @@ a {
 .name span {
   font-size: var(--tamP);
   font-weight: 100;
+  margin-left: 0.5em;
 }
 
 .page-1 {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .left-1 {
@@ -90,9 +100,10 @@ a {
 }
 
 .right-1 {
-  width: 65%;
+  width: 45%;
   display: flex;
   justify-content: center;
+  margin-left: 100px;
 }
 
 .right-1 img {
@@ -103,6 +114,28 @@ a {
 
 .carrossel {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 400px;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  transition: transform 2s linear;
+  transform: translateX(0);
+  animation: scroll 5s linear infinite;
+}
+
+.container img {
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+  width: 100px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
